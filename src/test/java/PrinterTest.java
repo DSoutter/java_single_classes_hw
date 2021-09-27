@@ -39,4 +39,10 @@ public class PrinterTest {
         printer.printSheetsCheck(100,30);
         assertEquals(1000, printer.getTonerAmount());
     }
+
+    @Test
+    public void tonerVolumeDecreases(){
+        printer.printSheetsCheck(20,5);
+        assertEquals(900, printer.getTonerAmount());
+    }
 }
