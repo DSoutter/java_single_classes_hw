@@ -15,4 +15,12 @@ public class Person {
     public String getFullName(){
         return this.forename + " " + this.surname;
     }
+
+    public int getAge(){
+        return this.age;
+    }
+
+    public void hasBirthday() {
+        this.age ++;
+    }
 }

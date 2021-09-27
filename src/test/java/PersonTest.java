@@ -16,4 +16,10 @@ public class PersonTest {
     public void personHasFullName(){
         assertEquals("Jim Carrey", person.getFullName());
     }
+
+    @Test
+    public void personCanAge(){
+        person.hasBirthday();
+        assertEquals(60, person.getAge());
+    }
 }
