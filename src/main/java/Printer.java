@@ -1,13 +1,19 @@
 public class Printer {
 
     private int sheetsLeft;
+    private int printerToner;
 
-    public Printer(int sheetsLeft) {
+    public Printer(int sheetsLeft, int printerToner) {
         this.sheetsLeft = sheetsLeft;
+        this.printerToner = printerToner;
     }
 
     public int getSheetsLeft() {
         return this.sheetsLeft;
+    }
+
+    public int getTonerAmount() {
+        return this.printerToner;
     }
 
     public void printSheets(int pages, int copies) {
