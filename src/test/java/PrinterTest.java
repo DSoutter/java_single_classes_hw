@@ -16,4 +16,16 @@ public class PrinterTest {
     public void hasSheetsLeft(){
         assertEquals(200,printer.getSheetsLeft());
     }
+
+    @Test
+    public void canPrintSheetsTrue(){
+        printer.printSheetsCheck(20,5);
+        assertEquals(100, printer.getSheetsLeft());
+    }
+
+    @Test
+    public void cannotPrintSheets(){
+        printer.printSheetsCheck(100,30);
+        assertEquals(200, printer.getSheetsLeft());
+    }
 }
