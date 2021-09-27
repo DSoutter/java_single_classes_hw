@@ -20,9 +20,14 @@ public class Printer {
         this.sheetsLeft = this.sheetsLeft - (pages * copies);
     }
 
+    public void reduceTonerVolume(int pages, int copies) {
+        this.printerToner = this.printerToner - (pages * copies);
+    }
+
     public void printSheetsCheck(int pages, int copies) {
-        if (this.sheetsLeft >= pages * copies) {
+        if (this.sheetsLeft >= pages * copies && this.printerToner >= pages * copies) {
             printSheets(pages,copies);
+            reduceTonerVolume(pages, copies);
         }
     }
 }

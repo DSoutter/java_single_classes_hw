@@ -33,4 +33,10 @@ public class PrinterTest {
     public void hasTonerProperty(){
         assertEquals(1000, printer.getTonerAmount());
     }
+
+    @Test
+    public void tonerVolumeStaysTheSame(){
+        printer.printSheetsCheck(100,30);
+        assertEquals(1000, printer.getTonerAmount());
+    }
 }
