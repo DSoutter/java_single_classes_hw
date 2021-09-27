@@ -22,4 +22,10 @@ public class PersonTest {
         person.hasBirthday();
         assertEquals(60, person.getAge());
     }
+
+    @Test
+    public void personHeightIncreases(){
+        person.hasBirthday();
+        assertEquals(188.1, person.getHeight(), 0.01);
+    }
 }

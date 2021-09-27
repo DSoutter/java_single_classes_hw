@@ -20,7 +20,12 @@ public class Person {
         return this.age;
     }
 
+    public double getHeight(){
+        return this.height;
+    }
+
     public void hasBirthday() {
         this.age ++;
+        this.height = this.height + 0.1;
     }
 }
