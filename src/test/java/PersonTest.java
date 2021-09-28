@@ -5,7 +5,7 @@ import static junit.framework.TestCase.assertEquals;
 
 public class PersonTest {
 
-    Person person;
+    private Person person;
 
     @Before
     public void before() {
